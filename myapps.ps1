@@ -61,11 +61,15 @@ $apps = @(
     # @{name = "unifiedremote"},
     # @{name = "virtualbox"}
 );
+
+Write-host "Installing: gerardog.gsudo"
+winget install --exact --silent --accept-source-agreements --accept-package-agreements --id gerardog.gsudo
+
 Foreach ($app in $apps) {
     $listApp = winget list --exact --query $app.name
     if (![String]::Join("", $listApp).Contains($app.name)) {
         Write-host "Installing: " $app.name
-        winget install --exact --silent --accept-source-agreements --accept-package-agreements --id $app.name
+        gsudo winget install --exact --silent --accept-source-agreements --accept-package-agreements --id $app.name
     }
     else {
         Write-host "Skipping: " $app.name " (already installed)"
