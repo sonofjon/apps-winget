@@ -4,7 +4,7 @@
 winget install calibre
 
 # Music
-winget install mediamonkey
+winget install mediamonkey picard
 
 # Productivity
 winget install thunderbird

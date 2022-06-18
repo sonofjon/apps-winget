@@ -27,7 +27,7 @@ winget install 7zip dropbox wiztree
 winget install acrobatreader
 
 # Music
-winget install picard spotify
+winget install spotify
 
 # Video
 winget install "mpv (Unofficial)" plex-desktop vlc
