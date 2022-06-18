@@ -8,62 +8,64 @@
 Write-Output "Installing Apps"
 $apps = @(
     # Communication
-    @{name = "teams"},
-    @{name = "zoom"},
+    @{name = "Microsoft.Teams"},
+    @{name = "Zoom.Zoom"},
     # Dev
-    @{name = "dbbrowser"},
-    @{name = "git"},
-    @{name = "terminal"},
-    @{name = "vscode"},
+    @{name = "DBBrowserForSQLite.DBBrowserForSQLite"},
+    @{name = "Git.Git"},
+    @{name = "Microsoft.WindowsTerminal"},
+    @{name = "Microsoft.VisualStudioCode"},
     # Downloads
-    @{name = "qbittorrent"},
+    @{name = "qBittorrent.qBittorrent"},
     # Files
-    @{name = "7zip"},
-    @{name = "dropbox"},
-    @{name = "wiztree"},
+    @{name = "7zip.7zip"},
+    @{name = "Dropbox.Dropbox"},
+    @{name = "AntibodySoftware.WizTree"},
     # Library
-    @{name = "dotnet.runtime.6"},
-    @{name = "vc++2015-2022x64"},
-    # @{name = "vc++2015-2022x86"},
+    @{name = "Microsoft.DotNet.Runtime.6"},
+    @{name = "Microsoft.VC++2015-2022Redist-x64"},
+    # @{name = "Microsoft.VC++2015-2022Redist-x86"},
     # Media
-    @{name = "acrobatreader"},
+    @{name = "Adobe.Acrobat.Reader.64-bit"},
     # Music
-    @{name = "picard"},
-    @{name = "spotify"},
+    @{name = "Spotify.Spotify"},
     # Video
     @{name = "9P3JFR0CLLL6"},   # mpv (Unofficial)
-    @{name = "plex-desktop"},
-    @{name = "vlc"},
+    @{name = "Plex.PlexMediaPlayer"},
+    @{name = "VideoLAN.VLC"},
     # Productivity
-    @{name = "evernote"},
+    @{name = "evernote.evernote"},
     # Tools
-    @{name = "auto-dark-mode"},
+    @{name = "Armin2208.WindowsAutoNightMode"},
     @{name = "9NQ8Q8J78637"},   # AutoHotkey
-    @{name = "bitwarden"},
-    @{name = "Barrier"},
-    @{name = "ccleaner"},
-    @{name = "nmap"},
-    @{name = "nomachine"},
-    @{name = "powertoys"},
+    @{name = "Bitwarden.Bitwarden"},
+    @{name = "DebaucheeOpenSourceGroup.Barrier"},
+    @{name = "Piriform.CCleaner"},
+    @{name = "Insecure.Nmap"},
+    @{name = "NoMachine.NoMachine"},
+    @{name = "Microsoft.PowerToys"},
     @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
-    @{name = "virt-viewer"},
+    @{name = "RedHat.VirtViewer"},
     # Web
-    @{name = "firefox"},
-    @{name = "googlechrome"}
+    @{name = "Mozilla.Firefox"},
+    @{name = "Google.Chrome"}
     # Unavailable
     # @{name = "moo0-system-monitor"},
+    # @{name = "webtorrent"},
     # Main machine only
     # @{name = "calibre"},
     # @{name = "mediamonkey"},
+    # @{name = "MusicBrainz.Picard"},
+    # @{name = "Plex.PlexMediaServer"},
     # @{name = "thunderbird"},
     # @{name = "unifiedremote"},
     # @{name = "virtualbox"}
 );
 Foreach ($app in $apps) {
-    $listApp = winget list --exact -q $app.name
+    $listApp = winget list --exact --query $app.name
     if (![String]::Join("", $listApp).Contains($app.name)) {
         Write-host "Installing: " $app.name
-        winget install --exact --silent --accept-source-agreements --accept-package-agreements $app.name
+        winget install --exact --silent --accept-source-agreements --accept-package-agreements --id $app.name
     }
     else {
         Write-host "Skipping: " $app.name " (already installed)"
