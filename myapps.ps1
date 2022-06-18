@@ -5,7 +5,6 @@
 # 2. Edit the list of apps to install.
 # 3. Run this script as administrator.
 
-Write-Output "Installing Apps"
 $apps = @(
     # Communication
     @{name = "Microsoft.Teams"},
@@ -68,10 +67,10 @@ winget install --exact --silent --accept-source-agreements --accept-package-agre
 Foreach ($app in $apps) {
     $listApp = winget list --exact --query $app.name
     if (![String]::Join("", $listApp).Contains($app.name)) {
-        Write-host "Installing: " $app.name
+        Write-host "`nInstalling: " $app.name
         gsudo winget install --exact --silent --accept-source-agreements --accept-package-agreements --id $app.name
     }
     else {
-        Write-host "Skipping: " $app.name " (already installed)"
+        Write-host "`nSkipping: " $app.name " (already installed)"
     }
 }
