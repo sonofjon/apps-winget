@@ -1,9 +1,12 @@
 # Reference: https://gist.github.com/dougwaldron/d510f2d67a922da169aca1aeff7e4c4d#file-installsoftware-ps1
 #
-# 1. Make sure the Microsoft App Installer is installed:
-#    https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1
-# 2. Edit the list of apps to install.
-# 3. Run this script as administrator.
+# 1. Make sure the Microsoft App Installer (winget) is installed:
+#      https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1
+# 2. Install gsudo:
+#      winget install gerardog.gsudo
+# 2. Edit the list of apps to install
+# 3. Run this script with gsudo:
+#      gsudo powershell <script>.ps1
 
 $apps = @(
     # Communication
@@ -61,14 +64,11 @@ $apps = @(
     # @{name = "virtualbox"}
 );
 
-Write-host "Installing: gerardog.gsudo"
-winget install --exact --silent --accept-source-agreements --accept-package-agreements --id gerardog.gsudo
-
 Foreach ($app in $apps) {
     $listApp = winget list --exact --query $app.name
     if (![String]::Join("", $listApp).Contains($app.name)) {
         Write-host "`nInstalling: " $app.name
-        gsudo winget install --exact --silent --accept-source-agreements --accept-package-agreements --id $app.name
+        winget install --exact --silent --accept-source-agreements --accept-package-agreements --id $app.name
     }
     else {
         Write-host "`nSkipping: " $app.name " (already installed)"
