@@ -33,7 +33,8 @@ $apps = @(
     @{name = "Spotify.Spotify"},
     # Video
     @{name = "9P3JFR0CLLL6"},   # mpv (Unofficial)
-    @{name = "Plex.PlexMediaPlayer"},
+    @{name = "Plex.Plex"}, # Plex Desktop
+    # @{name = "Plex.PlexMediaPlayer"}, # Plex TV
     @{name = "VideoLAN.VLC"},
     # Productivity
     @{name = "evernote.evernote"},
