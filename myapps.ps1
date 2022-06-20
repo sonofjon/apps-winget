@@ -8,17 +8,12 @@
 # 3. Run this script with gsudo:
 #      gsudo powershell <script>.ps1
 
-$apps = @(
-    # Communication
-    @{name = "Microsoft.Teams"},
-    @{name = "Zoom.Zoom"},
+$work = @(
     # Dev
     @{name = "DBBrowserForSQLite.DBBrowserForSQLite"},
     @{name = "Git.Git"},
     @{name = "Microsoft.WindowsTerminal"},
     @{name = "Microsoft.VisualStudioCode"},
-    # Downloads
-    @{name = "qBittorrent.qBittorrent"},
     # Files
     @{name = "7zip.7zip"},
     @{name = "Dropbox.Dropbox"},
@@ -29,15 +24,6 @@ $apps = @(
     # @{name = "Microsoft.VC++2015-2022Redist-x86"},
     # Media
     @{name = "Adobe.Acrobat.Reader.64-bit"},
-    # Music
-    @{name = "Spotify.Spotify"},
-    # Video
-    @{name = "9P3JFR0CLLL6"},   # mpv (Unofficial)
-    @{name = "Plex.Plex"}, # Plex Desktop
-    # @{name = "Plex.PlexMediaPlayer"}, # Plex TV
-    @{name = "VideoLAN.VLC"},
-    # Productivity
-    @{name = "evernote.evernote"},
     # Tools
     @{name = "Armin2208.WindowsAutoNightMode"},
     @{name = "9NQ8Q8J78637"},   # AutoHotkey
@@ -45,6 +31,7 @@ $apps = @(
     @{name = "DebaucheeOpenSourceGroup.Barrier"},
     @{name = "Piriform.CCleaner"},
     @{name = "Insecure.Nmap"},
+    # @{name = "moo0-system-monitor"},   # unavailable
     @{name = "NoMachine.NoMachine"},
     @{name = "Microsoft.PowerToys"},
     @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
@@ -52,20 +39,42 @@ $apps = @(
     # Web
     @{name = "Mozilla.Firefox"},
     @{name = "Google.Chrome"}
-    # Unavailable
-    # @{name = "moo0-system-monitor"},
-    # @{name = "webtorrent"},
-    # Main machine only
-    # @{name = "calibre"},
-    # @{name = "mediamonkey"},
-    # @{name = "MusicBrainz.Picard"},
-    # @{name = "Plex.PlexMediaServer"},
-    # @{name = "thunderbird"},
-    # @{name = "unifiedremote"},
-    # @{name = "virtualbox"}
 );
 
-Foreach ($app in $apps) {
+$home = @(
+    # Communication
+    @{name = "Microsoft.Teams"},
+    @{name = "Zoom.Zoom"},
+    # Downloads
+    @{name = "qBittorrent.qBittorrent"},
+    # @{name = "webtorrent"},   # unavailable
+    # Music
+    @{name = "Spotify.Spotify"},
+    # Productivity
+    @{name = "evernote.evernote"},
+    # Video
+    @{name = "9P3JFR0CLLL6"},   # mpv (Unofficial)
+    @{name = "Plex.Plex"}, # Plex Desktop
+    # @{name = "Plex.PlexMediaPlayer"}, # Plex TV
+    @{name = "VideoLAN.VLC"}
+);
+
+$main = @(
+    # Media
+    @{name = "calibre"},
+    # Music
+    @{name = "mediamonkey"},
+    @{name = "MusicBrainz.Picard"},
+    # Productivity
+    @{name = "thunderbird"},
+    # Tools
+    @{name = "unifiedremote"},
+    @{name = "virtualbox"},
+    # Video
+    @{name = "Plex.PlexMediaServer"}
+);
+
+Foreach ($app in $work) {
     $listApp = winget list --exact --query $app.name
     if (![String]::Join("", $listApp).Contains($app.name)) {
         Write-host "`nInstalling: " $app.name
