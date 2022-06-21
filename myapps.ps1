@@ -16,17 +16,20 @@ function Install-AJ8Apps {
         [string[]]$ComputerType
         # [ValidateNotNullOrEmpty()] # provide default value
         # [string[]]$ComputerType = "work"
-        PROCESS {
-            foreach ($Type in $ComputerType) {
-                try {
-                    ["work", "home", "main"].Contains($Type) # ismember?
-                }
-                catch {
-                    Write-Warning -Message "Unknown Computer type: $Type. Options are 'work', 'home' and 'main'"
-                }
+    )
+
+    PROCESS {
+        foreach ($Type in $ComputerType) {
+            try {
+                # @("work", "home", "main").Contains($Type)
+                $Type -in @('work', 'home', 'main')
+            }
+            catch {
+                Write-Warning -Message "Unknown Computer type: $Type. Options are 'work', 'home' and 'main'"
+                Write-Host $_
             }
         }
-    )
+    }
 
     switch ( $ComputerType )
     {
