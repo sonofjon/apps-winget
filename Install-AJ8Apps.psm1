@@ -5,8 +5,14 @@
 # 2. Install gsudo:
 #      winget install gerardog.gsudo
 # 2. Edit the list of apps to install
-# 3. Run this script with gsudo:
-#      gsudo powershell <script>.ps1
+# 3. Import this module with:
+#      Import-Module ~\Documents\WindowsPowerShell\Install-AJ8Apps.psm1
+# 4. Run script with gsudo:
+#      gsudo Install-AJ8Apps [ -ComputerType {work|home|main} [,...]] ]
+#
+# TODO:
+#  * Move app lists to separate files so that module does not need re-importing
+#
 
 function Install-AJ8Apps {
 
