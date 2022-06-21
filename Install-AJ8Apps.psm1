@@ -12,24 +12,11 @@ function Install-AJ8Apps {
 
     [CmdletBinding()]           # advanced function
     param (
-        [Parameter(Mandatory)]  # mandatory value(s) for ComputerType
+        [Parameter(Mandatory)]
+        [ValidateSet('work', 'home', 'main')]
         [string[]]$ComputerType
-        # [ValidateNotNullOrEmpty()] # provide default value
-        # [string[]]$ComputerType = "work"
     )
 
-    PROCESS {
-        foreach ($Type in $ComputerType) {
-            try {
-                # @("work", "home", "main").Contains($Type)
-                $Type -in @('work', 'home', 'main')
-            }
-            catch {
-                Write-Warning -Message "Unknown Computer type: $Type. Options are 'work', 'home' and 'main'"
-                Write-Host $_
-            }
-        }
-    }
 
     switch ( $ComputerType )
     {
