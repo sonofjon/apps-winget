@@ -74,6 +74,8 @@ function Install-AJ8Apps {
                     @{name = "Spotify.Spotify"},
                     # Productivity
                     @{name = "evernote.evernote"},
+                    # Tools
+                    @{name = "Synology.DriveClient"},
                     # Video
                     @{name = "9P3JFR0CLLL6"},   # mpv (Unofficial)
                     @{name = "Plex.Plex"}, # Plex Desktop
