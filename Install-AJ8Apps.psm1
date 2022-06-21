@@ -10,7 +10,6 @@
 
 function Install-AJ8Apps {
 
-    [CmdletBinding()]           # advanced function
     param (
         [Parameter(Mandatory)]
         [ValidateSet('work', 'home', 'main')]
