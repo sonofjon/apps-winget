@@ -63,12 +63,10 @@ function Install-AJ8Apps {
                 # Web
                 @{name = "Mozilla.Firefox"},
                 @{name = "Google.Chrome"}
-            );
-
+            )
         }
         "home"
         {
-
             $apps = @(
                 # Communication
                 @{name = "Microsoft.Teams"},
@@ -85,8 +83,7 @@ function Install-AJ8Apps {
                 @{name = "Plex.Plex"}, # Plex Desktop
                 # @{name = "Plex.PlexMediaPlayer"}, # Plex TV
                 @{name = "VideoLAN.VLC"}
-            );
-
+            )
         }
         "main"
         {
@@ -103,7 +100,7 @@ function Install-AJ8Apps {
                 @{name = "virtualbox"},
                 # Video
                 @{name = "Plex.PlexMediaServer"}
-            );
+            )
         }
     }
 
