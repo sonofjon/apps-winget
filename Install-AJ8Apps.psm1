@@ -98,6 +98,8 @@ function Install-AJ8Apps {
                     # Tools
                     @{name = "UnifiedIntents.UnifiedRemote"},
                     @{name = "Oracle.VirtualBox"},
+                    # @{name = "AndreWiethoff.ExactAudioCopy"}
+                    # @{name = "HandBrake.HandBrake"},
                     # Video
                     @{name = "Plex.PlexMediaServer"}
                 )
