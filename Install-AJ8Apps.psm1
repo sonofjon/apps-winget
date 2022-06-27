@@ -90,6 +90,7 @@ function Install-AJ8Apps {
                     # Media
                     @{name = "calibre.calibre"},
                     # Music
+                    @{name = "Apple.iTunes"},
                     @{name = "VentisMedia.MediaMonkey"},
                     @{name = "MusicBrainz.Picard"},
                     # Productivity
