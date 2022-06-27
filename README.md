@@ -1,2 +1,2 @@
 # winget-apps
-My Windows applications
+Install my Windows applications
