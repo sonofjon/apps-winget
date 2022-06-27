@@ -76,6 +76,7 @@ function Install-AJ8Apps {
                     @{name = "evernote.evernote"},
                     # Tools
                     @{name = "Synology.DriveClient"},
+                    @{name = "Synology.Assistant"},   # unavailable
                     # Video
                     @{name = "9P3JFR0CLLL6"},   # mpv (Unofficial)
                     @{name = "Plex.Plex"}, # Plex Desktop
