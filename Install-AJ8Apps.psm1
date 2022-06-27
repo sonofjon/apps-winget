@@ -88,15 +88,15 @@ function Install-AJ8Apps {
             {
                 $apps = @(
                     # Media
-                    @{name = "calibre"},
+                    @{name = "calibre.calibre"},
                     # Music
-                    @{name = "mediamonkey"},
+                    @{name = "VentisMedia.MediaMonkey"},
                     @{name = "MusicBrainz.Picard"},
                     # Productivity
-                    @{name = "thunderbird"},
+                    @{name = "Mozilla.Thunderbird"},
                     # Tools
-                    @{name = "unifiedremote"},
-                    @{name = "virtualbox"},
+                    @{name = "UnifiedIntents.UnifiedRemote"},
+                    @{name = "Oracle.VirtualBox"},
                     # Video
                     @{name = "Plex.PlexMediaServer"}
                 )
