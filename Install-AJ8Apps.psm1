@@ -104,7 +104,7 @@ function Install-AJ8Apps {
             $listApp = winget list --exact --query $app.name
             if (![String]::Join("", $listApp).Contains($app.name)) {
                 Write-host "`nInstalling: " $app.name
-                # winget install --exact --silent --accept-source-agreements --accept-package-agreements --id $app.name
+                winget install --exact --silent --accept-source-agreements --accept-package-agreements --id $app.name
             }
             else {
                 Write-host "`nSkipping: " $app.name " (already installed)"
