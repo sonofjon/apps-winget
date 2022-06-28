@@ -9,7 +9,7 @@
 #      Import-Module ~\Documents\WindowsPowerShell\Install-AJ8Apps.psm1
 # 4. Run script with gsudo:
 #      gsudo Install-AJ8Apps [ -ComputerType {work|home|main} [,...]] ]
-#
+#      TODO: gsudo cannot find Install-AJApps
 # TODO:
 #  * Move app lists to separate files so that module does not need re-importing
 #
