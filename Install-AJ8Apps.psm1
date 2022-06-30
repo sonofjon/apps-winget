@@ -8,8 +8,8 @@
 # 3. Import this module with:
 #      Import-Module ~\Documents\WindowsPowerShell\Install-AJ8Apps.psm1
 # 4. Run script with gsudo:
-#      gsudo Install-AJ8Apps [ -ComputerType {work|home|main} [,...]] ]
-#      TODO: gsudo cannot find Install-AJApps
+#      gsudo { powershell | --LoadProfile } Install-AJ8Apps [ -ComputerType { work | home | main } [,...]] ]
+#
 # TODO:
 #  * Move app lists to separate files so that module does not need re-importing
 #
@@ -107,7 +107,7 @@ function Install-AJ8Apps {
                 winget install --exact --silent --accept-source-agreements --accept-package-agreements --id $app.name
             }
             else {
-                Write-host "`nSkipping: " $app.name " (already installed)"
+                Write-host "`nSkipping:" $app.name "(already installed)"
             }
         }
     }
