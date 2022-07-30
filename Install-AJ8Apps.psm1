@@ -75,6 +75,7 @@ function Install-AJ8Apps {
                     # Productivity
                     @{name = "evernote.evernote"},
                     # Tools
+                    @{name = "Rufus.Rufus"},
                     @{name = "Synology.DriveClient"},
                     @{name = "Synology.Assistant"},   # unavailable
                     # Video
