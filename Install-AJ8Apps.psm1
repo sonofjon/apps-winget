@@ -71,7 +71,8 @@ function Install-AJ8Apps {
                     @{name = "qBittorrent.qBittorrent"},
                     # @{name = "webtorrent"},   # unavailable
                     # Music
-                    @{name = "Spotify.Spotify"},
+                    # @{name = "Spotify.Spotify"},
+                    # @{name = "9NCBCSZSJRSB"},   # Spotify
                     # Productivity
                     @{name = "evernote.evernote"},
                     # Tools
