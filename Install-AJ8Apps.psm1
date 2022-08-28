@@ -104,7 +104,9 @@ function Install-AJ8Apps {
                     # @{name = "AndreWiethoff.ExactAudioCopy"}
                     # @{name = "HandBrake.HandBrake"},
                     # Video
-                    @{name = "Plex.PlexMediaServer"}
+                    @{name = "Plex.PlexMediaServer"},
+                    # Other
+                    @{name = "Garmin.Express"}
                 )
             }
         }
