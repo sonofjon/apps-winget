@@ -53,7 +53,8 @@ function Install-AJ8Apps {
                     @{name = "Insecure.Nmap"},
                     # @{name = "moo0-system-monitor"},   # unavailable
                     @{name = "NoMachine.NoMachine"},
-                    @{name = "Microsoft.PowerToys"},
+                    # @{name = "Microsoft.PowerToys"},   # Powertoys Preview
+                    @{name = "XP89DCGQ3K6VLD"},   # # Powertoys
                     @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
                     @{name = "RedHat.VirtViewer"},
                     # Web
