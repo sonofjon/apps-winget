@@ -58,7 +58,6 @@ function Install-AJ8Apps {
                     @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
                     @{name = "RedHat.VirtViewer"},
                     # Web
-                    @{name = "Mozilla.Firefox"},
                     @{name = "Google.Chrome"}
                 )
             }
@@ -86,7 +85,10 @@ function Install-AJ8Apps {
                     @{name = "9P3JFR0CLLL6"},   # mpv (Unofficial)
                     @{name = "Plex.Plex"}, # Plex Desktop
                     # @{name = "Plex.PlexMediaPlayer"}, # Plex TV
-                    @{name = "VideoLAN.VLC"}
+                    @{name = "VideoLAN.VLC"},
+                    # Web
+                    @{name = "Mozilla.Firefox"}
+
                 )
             }
             "main"
