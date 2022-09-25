@@ -79,6 +79,7 @@ function Install-AJ8Apps {
                     # Tools
                     # @{name = "Rufus.Rufus"},
                     @{name = "9PC3H3V7Q9CH"},   # Rufus
+                    @{name = "SumatraPDF.SumatraPDF"},
                     @{name = "Synology.DriveClient"},
                     @{name = "Synology.Assistant"},   # unavailable
                     # Video
