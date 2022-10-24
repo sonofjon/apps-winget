@@ -64,6 +64,8 @@ function Install-AJ8Apps {
             "home"
             {
                 $apps = @(
+                    # Books
+                    @{name = "Amazon.Kindle"},
                     # Communication
                     @{name = "Microsoft.Teams"},
                     @{name = "Zoom.Zoom"},
@@ -94,8 +96,9 @@ function Install-AJ8Apps {
             "main"
             {
                 $apps = @(
-                    # Media
-                    @{name = "calibre.calibre"},
+                    # Books
+                    @{name = "Calibre.Calibre"},
+                    @{name = "Amazon.SendToKindle"},
                     # Music
                     @{name = "Apple.iTunes"},
                     @{name = "VentisMedia.MediaMonkey"},
