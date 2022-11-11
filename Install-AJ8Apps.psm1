@@ -82,7 +82,7 @@ function Install-AJ8Apps {
                     @{name = "9PC3H3V7Q9CH"},   # Rufus
                     @{name = "SumatraPDF.SumatraPDF"},
                     @{name = "Synology.DriveClient"},
-                    @{name = "Synology.Assistant"},   # unavailable
+                    # @{name = "Synology.Assistant"},   # unavailable
                     # Video
                     @{name = "9P3JFR0CLLL6"},   # mpv (Unofficial)
                     @{name = "Plex.Plex"}, # Plex Desktop
