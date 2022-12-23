@@ -76,8 +76,10 @@ function Install-AJ8Apps {
                     # @{name = "Spotify.Spotify"},
                     # @{name = "9NCBCSZSJRSB"},   # Spotify
                     # Productivity
-                    @{name = "evernote.evernote"},
-                    @{name = "Joplin.Joplin"},
+                    @{name = "TheDocumentFoundation.LibreOffice.LTS"},
+                    # @{name = "evernote.evernote"},
+                    # @{name = "Joplin.Joplin"},
+                    @{name = "Obsidian.Obsidian"},
                     # Tools
                     # @{name = "Rufus.Rufus"},
                     @{name = "9PC3H3V7Q9CH"},   # Rufus
