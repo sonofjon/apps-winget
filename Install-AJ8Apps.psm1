@@ -56,7 +56,7 @@ function Install-AJ8Apps {
                     # @{name = "Microsoft.PowerToys"},   # Powertoys Preview
                     @{name = "XP89DCGQ3K6VLD"},   # # Powertoys
                     @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
-                    @{name = "RedHat.VirtViewer"},
+                    # @{name = "RedHat.VirtViewer"},
                     # Web
                     @{name = "Google.Chrome"}
                 )
