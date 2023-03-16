@@ -81,6 +81,7 @@ function Install-AJ8Apps {
                     # @{name = "Joplin.Joplin"},
                     @{name = "Obsidian.Obsidian"},
                     # Tools
+                    @{name = "acrosync.DuplicacyWeb"},
                     # @{name = "Rufus.Rufus"},
                     @{name = "9PC3H3V7Q9CH"},   # Rufus
                     @{name = "SumatraPDF.SumatraPDF"},
@@ -93,7 +94,6 @@ function Install-AJ8Apps {
                     @{name = "VideoLAN.VLC"},
                     # Web
                     @{name = "Mozilla.Firefox"}
-
                 )
             }
             "main"
