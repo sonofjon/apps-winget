@@ -75,6 +75,8 @@ function Install-AJ8Apps {
                     # Music
                     # @{name = "Spotify.Spotify"},
                     # @{name = "9NCBCSZSJRSB"},   # Spotify
+                    # Media
+                    @{name = "9PD9BHGLFC7H"},   # Inkscape
                     # Productivity
                     @{name = "TheDocumentFoundation.LibreOffice.LTS"},
                     # @{name = "evernote.evernote"},
