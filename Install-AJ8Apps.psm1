@@ -55,7 +55,7 @@ function Install-AJ8Apps {
                     @{name = "NoMachine.NoMachine"},
                     # @{name = "Microsoft.PowerToys"},   # Powertoys Preview
                     @{name = "XP89DCGQ3K6VLD"},   # # Powertoys
-                    @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
+                    # @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
                     # @{name = "RedHat.VirtViewer"},
                     # Web
                     @{name = "Google.Chrome"}
@@ -89,8 +89,8 @@ function Install-AJ8Apps {
                     # @{name = "Skype"},   # preinstalled
                     # @{name = "Skype Meetings"},   # unavailable
                     @{name = "SumatraPDF.SumatraPDF"},
-                    @{name = "Synology.DriveClient"},
-                    # @{name = "Synology.Assistant"},   # unavailable
+                    # @{name = "Synology.Assistant"},
+                    # @{name = "Synology.DriveClient"},
                     # Video
                     @{name = "9P3JFR0CLLL6"},   # mpv (Unofficial)
                     @{name = "Plex.Plex"}, # Plex Desktop
@@ -114,11 +114,11 @@ function Install-AJ8Apps {
                     @{name = "Mozilla.Thunderbird"},
                     # Tools
                     @{name = "UnifiedIntents.UnifiedRemote"},
-                    @{name = "Oracle.VirtualBox"},
+                    # @{name = "Oracle.VirtualBox"},
                     # @{name = "AndreWiethoff.ExactAudioCopy"}
                     # @{name = "HandBrake.HandBrake"},
                     # Video
-                    @{name = "Plex.PlexMediaServer"},
+                    # @{name = "Plex.PlexMediaServer"},
                     # Other
                     @{name = "Garmin.Express"}
                 )
