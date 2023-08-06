@@ -86,6 +86,8 @@ function Install-AJ8Apps {
                     @{name = "acrosync.DuplicacyWeb"},
                     # @{name = "Rufus.Rufus"},
                     @{name = "9PC3H3V7Q9CH"},   # Rufus
+                    # @{name = "Skype"},   # preinstalled
+                    # @{name = "Skype Meetings"},   # unavailable
                     @{name = "SumatraPDF.SumatraPDF"},
                     @{name = "Synology.DriveClient"},
                     # @{name = "Synology.Assistant"},   # unavailable
