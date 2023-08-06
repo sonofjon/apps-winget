@@ -48,8 +48,8 @@ function Install-AJ8Apps {
                     @{name = "Armin2208.WindowsAutoNightMode"},
                     @{name = "9NQ8Q8J78637"},   # AutoHotkey
                     @{name = "Bitwarden.Bitwarden"},
+                    @{name = "BleachBit.BleachBit"},
                     @{name = "DebaucheeOpenSourceGroup.Barrier"},
-                    @{name = "Piriform.CCleaner"},
                     @{name = "Insecure.Nmap"},
                     # @{name = "moo0-system-monitor"},   # unavailable
                     @{name = "NoMachine.NoMachine"},
