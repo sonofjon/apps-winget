@@ -54,7 +54,7 @@ function Install-AJ8Apps {
                     # @{name = "moo0-system-monitor"},   # unavailable
                     @{name = "NoMachine.NoMachine"},
                     # @{name = "Microsoft.PowerToys"},   # Powertoys Preview
-                    @{name = "XP89DCGQ3K6VLD"},   # # Powertoys
+                    @{name = "XP89DCGQ3K6VLD"},   # Powertoys
                     # @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
                     # @{name = "RedHat.VirtViewer"},
                     # Web
@@ -84,6 +84,7 @@ function Install-AJ8Apps {
                     @{name = "Obsidian.Obsidian"},
                     # Tools
                     @{name = "acrosync.DuplicacyWeb"},
+                    @{name = "QNAP.QfinderPro"},
                     @{name = "Rufus.Rufus"},
                     # @{name = "9PC3H3V7Q9CH"},   # Rufus
                     # @{name = "Skype"},   # preinstalled
