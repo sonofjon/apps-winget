@@ -86,6 +86,7 @@ function Install-AJ8Apps {
                     # Tools
                     @{name = "acrosync.DuplicacyWeb"},
                     @{name = "QNAP.QfinderPro"},
+                    @{name = "RevoUninstaller.RevoUninstaller"},
                     @{name = "Rufus.Rufus"},
                     # @{name = "9PC3H3V7Q9CH"},   # Rufus
                     # @{name = "Skype"},   # preinstalled
