@@ -67,6 +67,7 @@ function Install-AJ8Apps {
                     # Books
                     @{name = "Amazon.Kindle"},
                     # Communication
+                    @{name = "Jitsi.Meet"},
                     @{name = "Microsoft.Teams"},
                     @{name = "Zoom.Zoom"},
                     # Downloads
