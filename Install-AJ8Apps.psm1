@@ -69,6 +69,8 @@ function Install-AJ8Apps {
                     # Communication
                     @{name = "Jitsi.Meet"},
                     @{name = "Microsoft.Teams"},
+                    # @{name = "Skype"},   # preinstalled
+                    # @{name = "Skype Meetings"},   # unavailable
                     @{name = "Zoom.Zoom"},
                     # Downloads
                     @{name = "qBittorrent.qBittorrent"},
@@ -89,8 +91,6 @@ function Install-AJ8Apps {
                     @{name = "RevoUninstaller.RevoUninstaller"},
                     @{name = "Rufus.Rufus"},
                     # @{name = "9PC3H3V7Q9CH"},   # Rufus
-                    # @{name = "Skype"},   # preinstalled
-                    # @{name = "Skype Meetings"},   # unavailable
                     @{name = "SumatraPDF.SumatraPDF"},
                     # @{name = "Synology.Assistant"},
                     # @{name = "Synology.DriveClient"},
