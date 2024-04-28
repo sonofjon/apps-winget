@@ -31,6 +31,7 @@ function Install-AJ8Apps {
                 $apps = @(
                     # Dev
                     @{name = "DBBrowserForSQLite.DBBrowserForSQLite"},
+                    @{name = "Docker.DockerDesktop"},
                     @{name = "Git.Git"},
                     @{name = "Microsoft.WindowsTerminal"},
                     @{name = "Microsoft.VisualStudioCode"},
