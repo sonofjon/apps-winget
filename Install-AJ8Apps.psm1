@@ -35,6 +35,7 @@ function Install-AJ8Apps {
                     @{name = "Git.Git"},
                     @{name = "Microsoft.WindowsTerminal"},
                     @{name = "Microsoft.VisualStudioCode"},
+                    @{name = "WinMerge.WinMerge"},
                     # Files
                     @{name = "7zip.7zip"},
                     @{name = "Dropbox.Dropbox"},
