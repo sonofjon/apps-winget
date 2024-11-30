@@ -48,7 +48,8 @@ function Install-AJ8Apps {
                     @{name = "Adobe.Acrobat.Reader.64-bit"},
                     # Tools
                     @{name = "Armin2208.WindowsAutoNightMode"},
-                    @{name = "9NQ8Q8J78637"},   # AutoHotkey
+                    # @{name = "9NQ8Q8J78637"},   # AutoHotkey
+                    @{name = "9PLQFDG8HH9D"},   # AutoHotkey v2
                     @{name = "Bitwarden.Bitwarden"},
                     @{name = "BleachBit.BleachBit"},
                     @{name = "DebaucheeOpenSourceGroup.Barrier"},
