@@ -37,14 +37,14 @@ function Install-AJ8Apps {
                     @{name = "Git.Git"},
                     @{name = "Microsoft.WindowsTerminal"},
                     @{name = "Microsoft.VisualStudioCode"},
-                    @{name = "WinMerge.WinMerge"},
+                    # @{name = "WinMerge.WinMerge"},
                     # Files
                     @{name = "7zip.7zip"},
                     @{name = "Dropbox.Dropbox"},
                     @{name = "AntibodySoftware.WizTree"},
                     # Library
-                    @{name = "Microsoft.DotNet.Runtime.6"},
-                    @{name = "Microsoft.VC++2015-2022Redist-x64"},
+                    # @{name = "Microsoft.DotNet.Runtime.6"},
+                    # @{name = "Microsoft.VC++2015-2022Redist-x64"},
                     # @{name = "Microsoft.VC++2015-2022Redist-x86"},
                     # Media
                     @{name = "Adobe.Acrobat.Reader.64-bit"},
@@ -54,28 +54,24 @@ function Install-AJ8Apps {
                     @{name = "9PLQFDG8HH9D"},   # AutoHotkey v2
                     @{name = "Bitwarden.Bitwarden"},
                     @{name = "BleachBit.BleachBit"},
-                    @{name = "DebaucheeOpenSourceGroup.Barrier"},
-                    @{name = "Insecure.Nmap"},
+                    # @{name = "DebaucheeOpenSourceGroup.Barrier"},
+                    # @{name = "Insecure.Nmap"},
                     # @{name = "moo0-system-monitor"},   # unavailable
-                    @{name = "NoMachine.NoMachine"},
+                    # @{name = "NoMachine.NoMachine"},
                     # @{name = "Microsoft.PowerToys"},   # Powertoys Preview
-                    @{name = "XP89DCGQ3K6VLD"},   # Powertoys
+                    @{name = "XP89DCGQ3K6VLD"}   # Powertoys
                     # @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
-                    # @{name = "RedHat.VirtViewer"},
-                    # Web
-                    @{name = "Google.Chrome"}
+                    # @{name = "RedHat.VirtViewer"}
                 )
             }
             "home"
             {
                 $apps = @(
                     # Books
-                    @{name = "Amazon.Kindle"},
+                    # @{name = "Amazon.Kindle"},
                     # Communication
                     @{name = "Jitsi.Meet"},
                     @{name = "Microsoft.Teams"},
-                    # @{name = "Skype"},   # preinstalled
-                    # @{name = "Skype Meetings"},   # unavailable
                     @{name = "Zoom.Zoom"},
                     # Downloads
                     @{name = "qBittorrent.qBittorrent"},
@@ -93,10 +89,10 @@ function Install-AJ8Apps {
                     # Tools
                     @{name = "acrosync.DuplicacyWeb"},
                     @{name = "QNAP.QfinderPro"},
-                    @{name = "RevoUninstaller.RevoUninstaller"},
+                    # @{name = "RevoUninstaller.RevoUninstaller"},
                     @{name = "Rufus.Rufus"},
                     # @{name = "9PC3H3V7Q9CH"},   # Rufus
-                    @{name = "SumatraPDF.SumatraPDF"},
+                    # @{name = "SumatraPDF.SumatraPDF"},
                     # @{name = "Synology.Assistant"},
                     # @{name = "Synology.DriveClient"},
                     # Video
@@ -105,6 +101,7 @@ function Install-AJ8Apps {
                     # @{name = "Plex.PlexMediaPlayer"}, # Plex TV
                     @{name = "VideoLAN.VLC"},
                     # Web
+                    @{name = "Google.Chrome"},
                     @{name = "Mozilla.Firefox"}
                 )
             }
@@ -115,7 +112,7 @@ function Install-AJ8Apps {
                     @{name = "Calibre.Calibre"},
                     @{name = "Amazon.SendToKindle"},
                     # Music
-                    @{name = "Apple.iTunes"},
+                    # @{name = "Apple.iTunes"},
                     @{name = "VentisMedia.MediaMonkey"},
                     @{name = "MusicBrainz.Picard"},
                     # Productivity
