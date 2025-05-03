@@ -4,10 +4,12 @@
 #      https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1
 # 2. Install gsudo:
 #      winget install gerardog.gsudo
-# 2. Edit the list of apps to install
-# 3. Import this module with:
+# 3. Edit the list of apps to install
+# 4. Copy this module to ~\Documents\WindowsPowerShell
+# 5. Import this module with:
+#      Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 #      Import-Module ~\Documents\WindowsPowerShell\Install-AJ8Apps.psm1
-# 4. Run script with gsudo:
+# 6. Run script with gsudo:
 #      gsudo Install-AJ8Apps [ -ComputerType {work|home|main} [,...]] ]
 #
 # TODO:
