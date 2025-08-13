@@ -54,14 +54,10 @@ function Install-AJ8Apps {
                     @{name = "9PLQFDG8HH9D"},   # AutoHotkey v2
                     @{name = "Bitwarden.Bitwarden"},
                     @{name = "BleachBit.BleachBit"},
-                    # @{name = "DebaucheeOpenSourceGroup.Barrier"},
-                    # @{name = "Insecure.Nmap"},
                     # @{name = "moo0-system-monitor"},   # unavailable
-                    # @{name = "NoMachine.NoMachine"},
                     # @{name = "Microsoft.PowerToys"},   # Powertoys Preview
                     @{name = "XP89DCGQ3K6VLD"}   # Powertoys
                     # @{name = "9WZDNCRFJ3PS"},   # Microsoft Remote Desktop
-                    # @{name = "RedHat.VirtViewer"}
                 )
             }
             "home"
@@ -83,8 +79,6 @@ function Install-AJ8Apps {
                     @{name = "9PD9BHGLFC7H"},   # Inkscape
                     # Productivity
                     @{name = "TheDocumentFoundation.LibreOffice.LTS"},
-                    # @{name = "evernote.evernote"},
-                    # @{name = "Joplin.Joplin"},
                     @{name = "Obsidian.Obsidian"},
                     # Tools
                     @{name = "acrosync.DuplicacyWeb"},
