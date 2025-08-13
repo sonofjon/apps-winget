@@ -78,7 +78,7 @@ function Install-AJ8Apps {
                     # Media
                     @{name = "9PD9BHGLFC7H"},   # Inkscape
                     # Productivity
-                    @{name = "TheDocumentFoundation.LibreOffice.LTS"},
+                    @{name = "TheDocumentFoundation.LibreOffice"},
                     @{name = "Obsidian.Obsidian"},
                     # Tools
                     @{name = "acrosync.DuplicacyWeb"},
