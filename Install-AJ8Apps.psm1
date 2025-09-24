@@ -34,26 +34,26 @@ function Install-AJ8Apps {
                     # Dev
                     @{name = "DBBrowserForSQLite.DBBrowserForSQLite"},
                     @{name = "Docker.DockerDesktop"},
-                    @{name = "Git.Git"},
-                    @{name = "Microsoft.WindowsTerminal"},
-                    @{name = "Microsoft.VisualStudioCode"},
+                    # @{name = "Git.Git"},
+                    # @{name = "Microsoft.WindowsTerminal"},
+                    # @{name = "Microsoft.VisualStudioCode"},
                     # @{name = "WinMerge.WinMerge"},
                     # Files
-                    @{name = "7zip.7zip"},
-                    @{name = "Dropbox.Dropbox"},
-                    @{name = "AntibodySoftware.WizTree"},
+                    # @{name = "7zip.7zip"},
+                    # @{name = "Dropbox.Dropbox"},
+                    # @{name = "AntibodySoftware.WizTree"},
                     # Library
                     # @{name = "Microsoft.DotNet.Runtime.6"},
                     # @{name = "Microsoft.VC++2015-2022Redist-x64"},
                     # @{name = "Microsoft.VC++2015-2022Redist-x86"},
                     # Media
-                    @{name = "Adobe.Acrobat.Reader.64-bit"},
+                    # @{name = "Adobe.Acrobat.Reader.64-bit"},
                     # Tools
-                    @{name = "Armin2208.WindowsAutoNightMode"},
+                    @{name = "ArminOsaj.AutoDarkMode"},
                     # @{name = "9NQ8Q8J78637"},   # AutoHotkey
-                    @{name = "9PLQFDG8HH9D"},   # AutoHotkey v2
+                    # @{name = "9PLQFDG8HH9D"},   # AutoHotkey v2
                     @{name = "Bitwarden.Bitwarden"},
-                    @{name = "BleachBit.BleachBit"},
+                    # @{name = "BleachBit.BleachBit"},
                     # @{name = "moo0-system-monitor"},   # unavailable
                     # @{name = "Microsoft.PowerToys"},   # Powertoys Preview
                     @{name = "XP89DCGQ3K6VLD"}   # Powertoys
