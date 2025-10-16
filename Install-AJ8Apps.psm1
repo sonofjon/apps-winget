@@ -49,7 +49,7 @@ function Install-AJ8Apps {
                     # Media
                     # @{name = "Adobe.Acrobat.Reader.64-bit"},
                     # Tools
-                    @{name = "ArminOsaj.AutoDarkMode"},
+                    # @{name = "ArminOsaj.AutoDarkMode"},
                     # @{name = "9NQ8Q8J78637"},   # AutoHotkey
                     # @{name = "9PLQFDG8HH9D"},   # AutoHotkey v2
                     @{name = "Bitwarden.Bitwarden"},
